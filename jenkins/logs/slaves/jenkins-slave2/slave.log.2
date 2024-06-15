@@ -1,7 +1,132 @@
 SSHLauncher{host='172.31.84.143', port=22, credentialsId='68472007-6ce0-4fe7-914f-74d82edc3f35', jvmOptions='', javaPath='', prefixStartSlaveCmd='', suffixStartSlaveCmd='', launchTimeoutSeconds=60, maxNumRetries=10, retryWaitTime=15, sshHostKeyVerificationStrategy=hudson.plugins.sshslaves.verifiers.NonVerifyingKeyVerificationStrategy, tcpNoDelay=true, trackCredentials=true}
-[06/15/24 08:02:25] [SSH] Opening SSH connection to 172.31.84.143:22.
-[06/15/24 08:02:25] [SSH] WARNING: SSH Host Keys are not being verified. Man-in-the-middle attacks may be possible against this connection.
-[06/15/24 08:02:25] [SSH] Authentication failed.
-Authentication failed.
-[06/15/24 08:02:25] Launch failed - cleaning up connection
-[06/15/24 08:02:25] [SSH] Connection closed.
+[06/15/24 08:11:03] [SSH] Opening SSH connection to 172.31.84.143:22.
+[06/15/24 08:11:03] [SSH] WARNING: SSH Host Keys are not being verified. Man-in-the-middle attacks may be possible against this connection.
+[06/15/24 08:11:03] [SSH] Authentication successful.
+[06/15/24 08:11:03] [SSH] The remote user's environment is:
+BASH=/usr/bin/bash
+BASHOPTS=checkwinsize:cmdhist:complete_fullquote:extquote:force_fignore:globasciiranges:hostcomplete:interactive_comments:progcomp:promptvars:sourcepath
+BASHRCSOURCED=Y
+BASH_ALIASES=()
+BASH_ARGC=([0]="0")
+BASH_ARGV=()
+BASH_CMDS=()
+BASH_EXECUTION_STRING=set
+BASH_LINENO=()
+BASH_REMATCH=()
+BASH_SOURCE=()
+BASH_VERSINFO=([0]="5" [1]="1" [2]="8" [3]="1" [4]="release" [5]="x86_64-redhat-linux-gnu")
+BASH_VERSION='5.1.8(1)-release'
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+DIRSTACK=()
+EUID=1000
+GROUPS=()
+HOME=/home/ec2-user
+HOSTNAME=ip-172-31-84-143.ec2.internal
+HOSTTYPE=x86_64
+IFS=$' \t\n'
+LANG=en_US.UTF-8
+LESSOPEN='||/usr/bin/lesspipe.sh %s'
+LOGNAME=ec2-user
+MACHTYPE=x86_64-redhat-linux-gnu
+MOTD_SHOWN=pam
+OPTERR=1
+OPTIND=1
+OSTYPE=linux-gnu
+PATH=/home/ec2-user/.local/bin:/home/ec2-user/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
+PIPESTATUS=([0]="0")
+PPID=4132
+PS4='+ '
+PWD=/home/ec2-user
+SELINUX_LEVEL_REQUESTED=
+SELINUX_ROLE_REQUESTED=
+SELINUX_USE_CURRENT_RANGE=
+SHELL=/bin/bash
+SHELLOPTS=braceexpand:hashall:interactive-comments
+SHLVL=1
+SSH_CLIENT='172.31.20.187 59388 22'
+SSH_CONNECTION='172.31.20.187 59388 172.31.84.143 22'
+TERM=dumb
+UID=1000
+USER=ec2-user
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_SESSION_CLASS=user
+XDG_SESSION_ID=3
+XDG_SESSION_TYPE=tty
+_=rc
+which_declare='declare -f'
+which_opt=-f
+gawklibpath_append () 
+{ 
+    [ -z "$AWKLIBPATH" ] && AWKLIBPATH=`gawk 'BEGIN {print ENVIRON["AWKLIBPATH"]}'`;
+    export AWKLIBPATH="$AWKLIBPATH:$*"
+}
+gawklibpath_default () 
+{ 
+    unset AWKLIBPATH;
+    export AWKLIBPATH=`gawk 'BEGIN {print ENVIRON["AWKLIBPATH"]}'`
+}
+gawklibpath_prepend () 
+{ 
+    [ -z "$AWKLIBPATH" ] && AWKLIBPATH=`gawk 'BEGIN {print ENVIRON["AWKLIBPATH"]}'`;
+    export AWKLIBPATH="$*:$AWKLIBPATH"
+}
+gawkpath_append () 
+{ 
+    [ -z "$AWKPATH" ] && AWKPATH=`gawk 'BEGIN {print ENVIRON["AWKPATH"]}'`;
+    export AWKPATH="$AWKPATH:$*"
+}
+gawkpath_default () 
+{ 
+    unset AWKPATH;
+    export AWKPATH=`gawk 'BEGIN {print ENVIRON["AWKPATH"]}'`
+}
+gawkpath_prepend () 
+{ 
+    [ -z "$AWKPATH" ] && AWKPATH=`gawk 'BEGIN {print ENVIRON["AWKPATH"]}'`;
+    export AWKPATH="$*:$AWKPATH"
+}
+which () 
+{ 
+    ( alias;
+    eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@
+}
+Checking Java version in the PATH
+bash: line 1: java: command not found
+Java is not in the PATH nor configured with the javaPath setting, Jenkins will try to guess where is Java, this guess will be removed in the future. :Launch agents via SSH
+[06/15/24 08:11:03] [SSH] Checking java version of /home/ec2-user/jdk/bin/java
+Couldn't figure out the Java version of /home/ec2-user/jdk/bin/java
+bash: line 1: /home/ec2-user/jdk/bin/java: No such file or directory
+
+[06/15/24 08:11:03] [SSH] Checking java version of java
+Couldn't figure out the Java version of java
+bash: line 1: java: command not found
+
+[06/15/24 08:11:03] [SSH] Checking java version of /usr/bin/java
+Couldn't figure out the Java version of /usr/bin/java
+bash: line 1: /usr/bin/java: No such file or directory
+
+[06/15/24 08:11:03] [SSH] Checking java version of /usr/java/default/bin/java
+Couldn't figure out the Java version of /usr/java/default/bin/java
+bash: line 1: /usr/java/default/bin/java: No such file or directory
+
+[06/15/24 08:11:03] [SSH] Checking java version of /usr/java/latest/bin/java
+Couldn't figure out the Java version of /usr/java/latest/bin/java
+bash: line 1: /usr/java/latest/bin/java: No such file or directory
+
+[06/15/24 08:11:03] [SSH] Checking java version of /usr/local/bin/java
+Couldn't figure out the Java version of /usr/local/bin/java
+bash: line 1: /usr/local/bin/java: No such file or directory
+
+[06/15/24 08:11:03] [SSH] Checking java version of /usr/local/java/bin/java
+Couldn't figure out the Java version of /usr/local/java/bin/java
+bash: line 1: /usr/local/java/bin/java: No such file or directory
+
+java.io.IOException: Java not found on hudson.slaves.SlaveComputer@190f7a6. Install Java 8 or Java 11 on the Agent.
+	at hudson.plugins.sshslaves.JavaVersionChecker.resolveJava(JavaVersionChecker.java:83)
+	at hudson.plugins.sshslaves.SSHLauncher.lambda$launch$0(SSHLauncher.java:460)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+[06/15/24 08:11:03] Launch failed - cleaning up connection
+[06/15/24 08:11:03] [SSH] Connection closed.
