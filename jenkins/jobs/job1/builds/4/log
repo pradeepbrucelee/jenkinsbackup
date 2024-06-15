@@ -1,0 +1,85 @@
+Started by user [8mha:////4MFJ6xojmIiKJnOwGuHTGtjwzzlGbLZ/9/dVcqA+judpAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9gqLElNTUAgD3sYsXwgAAAA==[0mpradeep
+Running as SYSTEM
+Building remotely on [8mha:////4LcQMJRO/NhO19IDBGxTSo3XsG7FZM1w+6SYzY1GWzBdAAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgYJ/eT83ILSktQi/azUvOzMvGLd4pzEslQjAMA/Kp7NAAAA[0mjenkins-slave2 (lab1) in workspace /home/ec2-user/workspace/job1
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /home/ec2-user/workspace/job1/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/pradeepbrucelee/Java-project.git # timeout=10
+Fetching upstream changes from https://github.com/pradeepbrucelee/Java-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git fetch --tags --force --progress -- https://github.com/pradeepbrucelee/Java-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 7f4a8b3ad5c1dd2715b28e15f39296815d664ef8 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7f4a8b3ad5c1dd2715b28e15f39296815d664ef8 # timeout=10
+Commit message: "added java prohject"
+ > git rev-list --no-walk 7f4a8b3ad5c1dd2715b28e15f39296815d664ef8 # timeout=10
+[job1] $ /bin/sh -xe /tmp/jenkins18184947288393151720.sh
++ cd /home/ec2-user/workspace/job1
++ mvn clean deploy
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< com.example:java-tomcat-maven-example >----------------
+[INFO] Building hello Maven Webapp 1.0-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ java-tomcat-maven-example ---
+[INFO] Deleting /home/ec2-user/workspace/job1/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ java-tomcat-maven-example ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/ec2-user/workspace/job1/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ java-tomcat-maven-example ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ java-tomcat-maven-example ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/ec2-user/workspace/job1/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ java-tomcat-maven-example ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ java-tomcat-maven-example ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-war-plugin:2.2:war (default-war) @ java-tomcat-maven-example ---
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/home/ec2-user/.m2/repository/com/thoughtworks/xstream/xstream/1.3.1/xstream-1.3.1.jar) to field java.util.Properties.defaults
+WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[INFO] Packaging webapp
+[INFO] Assembling webapp [java-tomcat-maven-example] in [/home/ec2-user/workspace/job1/target/java-tomcat-maven-example]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/home/ec2-user/workspace/job1/src/main/webapp]
+[INFO] Webapp assembled in [41 msecs]
+[INFO] Building war: /home/ec2-user/workspace/job1/target/java-tomcat-maven-example.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.3:copy (default) @ java-tomcat-maven-example ---
+[INFO] Configured Artifact: com.github.jsimone:webapp-runner:8.5.11.3:jar
+[INFO] Copying webapp-runner-8.5.11.3.jar to /home/ec2-user/workspace/job1/target/dependency/webapp-runner.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ java-tomcat-maven-example ---
+[INFO] Installing /home/ec2-user/workspace/job1/target/java-tomcat-maven-example.war to /home/ec2-user/.m2/repository/com/example/java-tomcat-maven-example/1.0-SNAPSHOT/java-tomcat-maven-example-1.0-SNAPSHOT.war
+[INFO] Installing /home/ec2-user/workspace/job1/pom.xml to /home/ec2-user/.m2/repository/com/example/java-tomcat-maven-example/1.0-SNAPSHOT/java-tomcat-maven-example-1.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-deploy-plugin:2.7:deploy (default-deploy) @ java-tomcat-maven-example ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.723 s
+[INFO] Finished at: 2024-06-15T09:06:12Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-deploy-plugin:2.7:deploy (default-deploy) on project java-tomcat-maven-example: Deployment failed: repository element was not specified in the POM inside distributionManagement element or in -DaltDeploymentRepository=id::layout::url parameter -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

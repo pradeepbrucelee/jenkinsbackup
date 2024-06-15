@@ -1,0 +1,39 @@
+Started by user [8mha:////4MFJ6xojmIiKJnOwGuHTGtjwzzlGbLZ/9/dVcqA+judpAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9gqLElNTUAgD3sYsXwgAAAA==[0mpradeep
+Running as SYSTEM
+Building remotely on [8mha:////4LcQMJRO/NhO19IDBGxTSo3XsG7FZM1w+6SYzY1GWzBdAAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgYJ/eT83ILSktQi/azUvOzMvGLd4pzEslQjAMA/Kp7NAAAA[0mjenkins-slave2 (lab1) in workspace /home/ec2-user/workspace/C-project
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/pradeepbrucelee/C-program.git
+ > git init /home/ec2-user/workspace/C-project # timeout=10
+Fetching upstream changes from https://github.com/pradeepbrucelee/C-program.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git fetch --tags --force --progress -- https://github.com/pradeepbrucelee/C-program.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/pradeepbrucelee/C-program.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision cae2a6146b52c636ae50e19fc5f8e2a87d6bd255 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f cae2a6146b52c636ae50e19fc5f8e2a87d6bd255 # timeout=10
+Commit message: "Create mtest"
+ > git rev-list --no-walk 4671870dde59cb68210d7d4d5324ddb7bde1c66d # timeout=10
+[C-project] $ /bin/sh -xe /tmp/jenkins7284031671667559282.sh
++ cd /home/ec2-user/workspace/C-project
++ make
+gcc -c main.c
+main.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    2 | main(){
+      | ^~~~
+main.c: In function ‘main’:
+main.c:3:10: warning: implicit declaration of function ‘biggest3’ [-Wimplicit-function-declaration]
+    3 |          biggest3();
+      |          ^~~~~~~~
+main.c:4:10: warning: implicit declaration of function ‘fact’ [-Wimplicit-function-declaration]
+    4 |          fact();
+      |          ^~~~
+gcc -c big3.c
+gcc -c fact.c
+gcc -o ABC.exe main.o big3.o fact.o
+Finished: SUCCESS

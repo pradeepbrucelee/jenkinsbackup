@@ -1,0 +1,22 @@
+Started by user [8mha:////4MFJ6xojmIiKJnOwGuHTGtjwzzlGbLZ/9/dVcqA+judpAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9gqLElNTUAgD3sYsXwgAAAA==[0mpradeep
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/C-project
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/pradeepbrucelee/C-program.git
+ > git init /var/lib/jenkins/workspace/C-project # timeout=10
+Fetching upstream changes from https://github.com/pradeepbrucelee/C-program.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git fetch --tags --force --progress -- https://github.com/pradeepbrucelee/C-program.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/pradeepbrucelee/C-program.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 7fb65e658fb202af04e5d2d3ad7c6d8e25121712 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7fb65e658fb202af04e5d2d3ad7c6d8e25121712 # timeout=10
+Commit message: "files added"
+First time build. Skipping changelog.
+Finished: SUCCESS

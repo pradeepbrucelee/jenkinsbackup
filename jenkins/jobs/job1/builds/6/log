@@ -1,0 +1,27 @@
+Started by user [8mha:////4MFJ6xojmIiKJnOwGuHTGtjwzzlGbLZ/9/dVcqA+judpAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9gqLElNTUAgD3sYsXwgAAAA==[0mpradeep
+Running as SYSTEM
+Building remotely on [8mha:////4FSJwPTW5p0yBbTRdyrOptlyg8UY44dK2u5bP3Jlel2bAAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgYJ/eT83ILSktQi/azUvOzMvGLd4pzEslRDAHpuIwfNAAAA[0mjenkins-slave1 (lab1) in workspace /home/ec2-user/workspace/job1
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/pradeepbrucelee/Java-project.git
+ > git init /home/ec2-user/workspace/job1 # timeout=10
+Fetching upstream changes from https://github.com/pradeepbrucelee/Java-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git fetch --tags --force --progress -- https://github.com/pradeepbrucelee/Java-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/pradeepbrucelee/Java-project.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 7f4a8b3ad5c1dd2715b28e15f39296815d664ef8 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7f4a8b3ad5c1dd2715b28e15f39296815d664ef8 # timeout=10
+Commit message: "added java prohject"
+ > git rev-list --no-walk 7f4a8b3ad5c1dd2715b28e15f39296815d664ef8 # timeout=10
+[job1] $ /bin/sh -xe /tmp/jenkins14726127356451017714.sh
++ cd /home/ec2-user/workspace/job1
++ mvn clean deploy
+/tmp/jenkins14726127356451017714.sh: line 3: mvn: command not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,26 @@
+Started by user [8mha:////4MFJ6xojmIiKJnOwGuHTGtjwzzlGbLZ/9/dVcqA+judpAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9gqLElNTUAgD3sYsXwgAAAA==[0mpradeep
+Running as SYSTEM
+Building remotely on [8mha:////4LcQMJRO/NhO19IDBGxTSo3XsG7FZM1w+6SYzY1GWzBdAAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgYJ/eT83ILSktQi/azUvOzMvGLd4pzEslQjAMA/Kp7NAAAA[0mjenkins-slave2 (lab1) in workspace /home/ec2-user/workspace/Buildjob
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/pradeepbrucelee/C-program.git
+ > git init /home/ec2-user/workspace/Buildjob # timeout=10
+Fetching upstream changes from https://github.com/pradeepbrucelee/C-program.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git fetch --tags --force --progress -- https://github.com/pradeepbrucelee/C-program.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/pradeepbrucelee/C-program.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 4671870dde59cb68210d7d4d5324ddb7bde1c66d (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 4671870dde59cb68210d7d4d5324ddb7bde1c66d # timeout=10
+Commit message: "Create test123"
+First time build. Skipping changelog.
+[Buildjob] $ /bin/sh -xe /tmp/jenkins527004869329395394.sh
++ cd /home/ec2-user/workspace/Build-job
+/tmp/jenkins527004869329395394.sh: line 2: cd: /home/ec2-user/workspace/Build-job: No such file or directory
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

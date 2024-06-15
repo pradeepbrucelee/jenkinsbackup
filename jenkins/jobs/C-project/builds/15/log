@@ -1,0 +1,26 @@
+Started by user [8mha:////4MFJ6xojmIiKJnOwGuHTGtjwzzlGbLZ/9/dVcqA+judpAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9gqLElNTUAgD3sYsXwgAAAA==[0mpradeep
+Running as SYSTEM
+Building remotely on [8mha:////4FSJwPTW5p0yBbTRdyrOptlyg8UY44dK2u5bP3Jlel2bAAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgYJ/eT83ILSktQi/azUvOzMvGLd4pzEslRDAHpuIwfNAAAA[0mjenkins-slave1 in workspace /home/ec2-user/workspace/C-project
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/pradeepbrucelee/C-program.git
+ > git init /home/ec2-user/workspace/C-project # timeout=10
+Fetching upstream changes from https://github.com/pradeepbrucelee/C-program.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git fetch --tags --force --progress -- https://github.com/pradeepbrucelee/C-program.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/pradeepbrucelee/C-program.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision ac56313469aceeb3eaa85cd40951d24d65e02d75 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f ac56313469aceeb3eaa85cd40951d24d65e02d75 # timeout=10
+Commit message: "Create Testjenkines"
+ > git rev-list --no-walk ac56313469aceeb3eaa85cd40951d24d65e02d75 # timeout=10
+[C-project] $ /bin/sh -xe /tmp/jenkins9686973026010762277.sh
++ cd /var/lib/jenkins/workspace/C-project
+/tmp/jenkins9686973026010762277.sh: line 2: cd: /var/lib/jenkins/workspace/C-project: No such file or directory
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
